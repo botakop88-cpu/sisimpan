@@ -50,3 +50,20 @@ Thumbs.db
 .env*
 
 supabase/.temp/
+
+# project docs (not part of source code)
+/01_BRD_PRD_v2.md
+/02_Rencana_Implementasi_Teknis_v2.md
+/03_Breakdown_Task_v2.md
+/04_Analisis_Risiko_Teknis.md
+/AGENTS.md
+/CLAUDE.md
+/SETUP_M*.md
+/TODO.md
+*.bat
+inspect.js
+check-img.js
+print-env.cjs
+login-fullpage.png
+upload-fullpage.png
+opencode.json
