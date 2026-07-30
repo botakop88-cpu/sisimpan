@@ -95,7 +95,7 @@ export function LoginForm() {
           <div className="flex items-center gap-4 pt-4">
             <div className="flex -space-x-4">
               <div className="w-10 h-10 rounded-full border-2 border-white bg-surface-container-high flex items-center justify-center overflow-hidden">
-                <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxT0guQlvTEZ0JUZkkZXSie8Okn6v_PVA_LEv7GOmJsWsTpZhbD21R_KsSxD1eq3Uvec4Uda5I4hL6w7RFhIAUsavH7OdkmJ00DyHn5-pWiJmAiJbxRqHJg7S3zuY2MoH_TuFEMY5BdOb1nhIuR0x1wWcdLwBip91pV5Q4pBFaVU-PuLg6j8BjtJmT6K_ZdfgEuY55B-uEeGIU4DzbuQ2xK2Dr9-m0Wcu9q53bfDTrQBDPg_Q-Lkg" alt="" />
+                <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxT0guQlvTEZ0JUZkkZXSie8Okn6v_PVA_LEv7GOmJsWsTpZhbD21R_KsSxD1eq3Uvec4Uda5I4hL6w7RFhIAUsavH7OdkmJ00DyHn5-pWiJmAiJbxRqHJg7S3zuY2MoH_TuFEMY5BdOb1nhIuR0x1wV5Q4pBFaVU-PuLg6j8BjtJmT6K_ZdfgEuY55B-uEeGIU4DzbuQ2xK2Dr9-m0Wcu9q53bfDTrQBDPg_Q-Lkg" alt="" />
               </div>
               <div className="w-10 h-10 rounded-full border-2 border-white bg-surface-container-high flex items-center justify-center overflow-hidden">
                 <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAL_SfQCwXrP-bQdq8hnwCAiIwHHPWsjC2kmQdnP8M5nuaIxnYIB86HanRxXWMGA68s3Z1-32KollfyImJtnbV9tqy_J0fRfTXfXsR53u3A-T01hDH4GRSqVvN23kd9rIkow-NcJ2uGMlwUoiU5luFiH-6v5tR32pRCf-Ovagw-D8ZYksUSETKIN53IG53a6Yod5iimZ0bN-dp3tgJwfS_WhD4FKyiZ0PqxHpJaP3LaCxQtfGywoII" alt="" />
@@ -215,7 +215,7 @@ export function LoginForm() {
         </div>
 
         <div
-          className="fixed w-[400px] h-[400px] bg-primary/5 rounded-full blur-[80px] pointer-events-none z-0 transition-opacity duration-500"
+          className="fixed hidden lg:block w-[400px] h-[400px] bg-primary/5 rounded-full blur-[80px] pointer-events-none z-0 transition-opacity duration-500"
           style={{ left: glowPos.x - 200 + "px", top: glowPos.y - 200 + "px", opacity: 1 }}
         />
       </div>

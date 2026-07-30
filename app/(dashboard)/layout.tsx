@@ -152,11 +152,18 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
               <span className="material-symbols-outlined text-on-surface-variant shrink-0">chevron_right</span>
             </div>
           ) : null}
+
+          {/* Logout */}
+          {profile && (
+            <div className="mt-2 px-2">
+              <LogoutButton className="w-full justify-start gap-2 text-on-surface-variant hover:text-error hover:bg-error-container/10" />
+            </div>
+          )}
         </div>
       </aside>
 
       {/* Top Navbar */}
-      <header className="fixed top-0 right-0 z-40 flex h-16 items-center justify-between w-[calc(100%-240px)] border-b border-outline-variant bg-surface px-6">
+      <header className="fixed top-0 right-0 z-40 flex h-16 items-center justify-between lg:w-[calc(100%-240px)] w-full border-b border-outline-variant bg-surface px-6">
         <div className="flex items-center gap-3 lg:hidden">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-on-primary text-sm font-bold">
             S
@@ -201,7 +208,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
       </header>
 
       {/* Main Content */}
-      <main className="ml-[240px] pt-16 min-h-screen">
+      <main className="lg:ml-[240px] ml-0 pt-16 pb-20 min-h-screen">
         <div className="p-6">{children}</div>
       </main>
 
@@ -225,6 +232,18 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             </Link>
           );
         })}
+        {/* Logout on mobile */}
+        <button
+          onClick={async () => {
+            const supabase = createClient();
+            await supabase.auth.signOut();
+            window.location.href = "/login";
+          }}
+          className="flex flex-col items-center gap-1 rounded-lg px-3 py-1.5 transition-colors text-on-surface-variant hover:text-error"
+        >
+          <span className="material-symbols-outlined text-[20px]">logout</span>
+          <span className="text-[10px] font-semibold">Logout</span>
+        </button>
       </nav>
     </div>
   );
