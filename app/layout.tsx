@@ -4,9 +4,6 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "SISIMPAN",
   description: "Sistem Penyimpanan Cloud Aggregator",
-  icons: [{ rel: "icon", url: "/favicon.svg", type: "image/svg+xml" }],
-  appleWebApp: { capable: true, title: "SISIMPAN" },
-  other: { "apple-touch-icon": "/app-icon.svg" },
 };
 
 export default function RootLayout({
